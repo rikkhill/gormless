@@ -1,0 +1,17 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.3", features = ["derive"] }
+pyo3 = { version = "0.18", features = ["extension-module"] }
+
+[lib]
+name = "gormless_core"
+crate-type = ["cdylib"]
+path = "rust/src/lib.rs"
+
+[[bin]]
+name = "gormless_cli"
+path = "rust/src/main.rs"
