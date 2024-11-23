@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "4.3", features = ["derive"] }
+ocl = "0.19.7"
 pyo3 = { version = "0.18", features = ["extension-module"] }
 
 [lib]
