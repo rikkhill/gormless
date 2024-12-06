@@ -1,4 +1,5 @@
 mod common;
+mod system_queries;
 
 use clap::{Arg, Command};
 
@@ -29,4 +30,6 @@ fn main() {
     if let Some(custom_message) = matches.get_one::<String>("message") {
         println!("Custom Message: {}", custom_message);
     }
+
+    system_queries::unified::list_it()
 }
